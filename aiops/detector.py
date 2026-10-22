@@ -156,7 +156,7 @@ def main(argv=None):
         total_now = instant(QUERY_TOTAL)
         up = instant(QUERY_UP)
         p95 = instant(QUERY_P95)
-        series = history(QUERY, minutes=args.window_minutes)
+        series = history(QUERY + " or vector(0)", minutes=args.window_minutes)
     except OSError as exc:
         print(f"Prometheus injoignable ({exc}). Aucune donnée inventée : arrêt.")
         return 2

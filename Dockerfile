@@ -9,9 +9,10 @@ RUN apt-get update \
 WORKDIR /app
 COPY app/requirements.txt .
 # pip à jour ; setuptools/wheel inutiles à l'exécution et souvent signalés par Trivy
-RUN pip install --no-cache-dir --upgrade pip \
- && pip install --no-cache-dir -r requirements.txt \
- && pip uninstall -y setuptools wheel || true
+# pip n'est utile qu'à la construction : on le retire de l'image finale
+# (il embarque urllib3 2.7.0, signalé par Trivy : CVE-2026-97687, CVE-2026-97689)
+RUN pip install --no-cache-dir -r requirements.txt \
+ && python -m pip uninstall -y pip setuptools wheel
 
 COPY app ./app
 RUN useradd -r -u 10001 appuser

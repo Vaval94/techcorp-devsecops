@@ -1,0 +1,197 @@
+{
+  "incident_id": "INC-2026-1042",
+  "genere_le": "2026-10-22T21:00:22+00:00",
+  "observations": {
+    "http_500_last_minute": 50.18638058005273,
+    "logs": [
+      "api-1  | 2026-10-22T21:00:11.888086810Z ERROR:    order_processing_failed db_connection_timeout event=INC-2026-1042 release=2.4.7",
+      "api-1  | 2026-10-22T21:00:11.888931720Z INFO:     172.22.0.1:47446 - \"GET /orders HTTP/1.1\" 500 Internal Server Error",
+      "api-1  | 2026-10-22T21:00:12.400019144Z ERROR:    order_processing_failed db_connection_timeout event=INC-2026-1042 release=2.4.7",
+      "api-1  | 2026-10-22T21:00:12.400786050Z INFO:     172.22.0.1:47446 - \"GET /orders HTTP/1.1\" 500 Internal Server Error",
+      "api-1  | 2026-10-22T21:00:12.910360725Z ERROR:    order_processing_failed db_connection_timeout event=INC-2026-1042 release=2.4.7",
+      "api-1  | 2026-10-22T21:00:12.910941030Z INFO:     172.22.0.1:47446 - \"GET /orders HTTP/1.1\" 500 Internal Server Error",
+      "api-1  | 2026-10-22T21:00:13.423388447Z ERROR:    order_processing_failed db_connection_timeout event=INC-2026-1042 release=2.4.7",
+      "api-1  | 2026-10-22T21:00:13.423782540Z INFO:     172.22.0.1:47446 - \"GET /orders HTTP/1.1\" 500 Internal Server Error",
+      "api-1  | 2026-10-22T21:00:13.931828250Z ERROR:    order_processing_failed db_connection_timeout event=INC-2026-1042 release=2.4.7",
+      "api-1  | 2026-10-22T21:00:13.932496739Z INFO:     172.22.0.1:47446 - \"GET /orders HTTP/1.1\" 500 Internal Server Error",
+      "api-1  | 2026-10-22T21:00:14.454474311Z ERROR:    order_processing_failed db_connection_timeout event=INC-2026-1042 release=2.4.7",
+      "api-1  | 2026-10-22T21:00:14.455533257Z INFO:     172.22.0.1:47446 - \"GET /orders HTTP/1.1\" 500 Internal Server Error",
+      "api-1  | 2026-10-22T21:00:14.975808025Z ERROR:    order_processing_failed db_connection_timeout event=INC-2026-1042 release=2.4.7",
+      "api-1  | 2026-10-22T21:00:14.976343500Z INFO:     172.22.0.1:47446 - \"GET /orders HTTP/1.1\" 500 Internal Server Error",
+      "api-1  | 2026-10-22T21:00:15.489717410Z ERROR:    order_processing_failed db_connection_timeout event=INC-2026-1042 release=2.4.7",
+      "api-1  | 2026-10-22T21:00:15.490350348Z INFO:     172.22.0.1:47446 - \"GET /orders HTTP/1.1\" 500 Internal Server Error",
+      "api-1  | 2026-10-22T21:00:16.001714081Z ERROR:    order_processing_failed db_connection_timeout event=INC-2026-1042 release=2.4.7",
+      "api-1  | 2026-10-22T21:00:16.002223716Z INFO:     172.22.0.1:47446 - \"GET /orders HTTP/1.1\" 500 Internal Server Error",
+      "api-1  | 2026-10-22T21:00:16.513011304Z ERROR:    order_processing_failed db_connection_timeout event=INC-2026-1042 release=2.4.7",
+      "api-1  | 2026-10-22T21:00:16.514276219Z INFO:     172.22.0.1:47446 - \"GET /orders HTTP/1.1\" 500 Internal Server Error",
+      "api-1  | 2026-10-22T21:00:17.022294912Z ERROR:    order_processing_failed db_connection_timeout event=INC-2026-1042 release=2.4.7",
+      "api-1  | 2026-10-22T21:00:17.023423461Z INFO:     172.22.0.1:47446 - \"GET /orders HTTP/1.1\" 500 Internal Server Error",
+      "api-1  | 2026-10-22T21:00:17.534000584Z ERROR:    order_processing_failed db_connection_timeout event=INC-2026-1042 release=2.4.7",
+      "api-1  | 2026-10-22T21:00:17.534428695Z INFO:     172.22.0.1:47446 - \"GET /orders HTTP/1.1\" 500 Internal Server Error",
+      "api-1  | 2026-10-22T21:00:18.048772933Z ERROR:    order_processing_failed db_connection_timeout event=INC-2026-1042 release=2.4.7",
+      "api-1  | 2026-10-22T21:00:18.049319268Z INFO:     172.22.0.1:47446 - \"GET /orders HTTP/1.1\" 500 Internal Server Error",
+      "api-1  | 2026-10-22T21:00:18.563150983Z ERROR:    order_processing_failed db_connection_timeout event=INC-2026-1042 release=2.4.7",
+      "api-1  | 2026-10-22T21:00:18.563795033Z INFO:     172.22.0.1:47446 - \"GET /orders HTTP/1.1\" 500 Internal Server Error",
+      "api-1  | 2026-10-22T21:00:19.074496640Z ERROR:    order_processing_failed db_connection_timeout event=INC-2026-1042 release=2.4.7",
+      "api-1  | 2026-10-22T21:00:19.075153655Z INFO:     172.22.0.1:47446 - \"GET /orders HTTP/1.1\" 500 Internal Server Error",
+      "api-1  | 2026-10-22T21:00:19.586309054Z ERROR:    order_processing_failed db_connection_timeout event=INC-2026-1042 release=2.4.7",
+      "api-1  | 2026-10-22T21:00:19.587178833Z INFO:     172.22.0.1:47446 - \"GET /orders HTTP/1.1\" 500 Internal Server Error",
+      "api-1  | 2026-10-22T21:00:20.101520877Z ERROR:    order_processing_failed db_connection_timeout event=INC-2026-1042 release=2.4.7",
+      "api-1  | 2026-10-22T21:00:20.102153013Z INFO:     172.22.0.1:47446 - \"GET /orders HTTP/1.1\" 500 Internal Server Error",
+      "api-1  | 2026-10-22T21:00:20.612719003Z ERROR:    order_processing_failed db_connection_timeout event=INC-2026-1042 release=2.4.7",
+      "api-1  | 2026-10-22T21:00:20.613293844Z INFO:     172.22.0.1:47446 - \"GET /orders HTTP/1.1\" 500 Internal Server Error",
+      "api-1  | 2026-10-22T21:00:21.125199153Z ERROR:    order_processing_failed db_connection_timeout event=INC-2026-1042 release=2.4.7",
+      "api-1  | 2026-10-22T21:00:21.125771781Z INFO:     172.22.0.1:47446 - \"GET /orders HTTP/1.1\" 500 Internal Server Error",
+      "api-1  | 2026-10-22T21:00:21.637668508Z ERROR:    order_processing_failed db_connection_timeout event=INC-2026-1042 release=2.4.7",
+      "api-1  | 2026-10-22T21:00:21.638289802Z INFO:     172.22.0.1:47446 - \"GET /orders HTTP/1.1\" 500 Internal Server Error"
+    ],
+    "requests_last_minute": 50.18638058005273,
+    "up": 1.0,
+    "latence_p95_s": 0.0047,
+    "serie_http_500_par_minute": [
+      23.029160833041658,
+      0.0,
+      0.0,
+      117.82675103643903,
+      116.75486933275138,
+      1.0909884355225836,
+      0.0,
+      0.0,
+      3.2730248204382217,
+      116.73576260091643,
+      116.73576260091643,
+      0.0,
+      63.277329260309834,
+      117.82460861501536,
+      61.09535238926467,
+      61.09868528721839
+    ],
+    "source_logs": "docker compose logs --since 15m --tail 500 api",
+    "volume_logs": {
+      "lignes_lues": 504,
+      "lignes_pertinentes": 463,
+      "lignes_conservées": 40
+    },
+    "changement": {
+      "change_id": "CHG-2026-0247",
+      "version": "2.4.7",
+      "previous_version": "2.4.6",
+      "deployed_at": "2026-10-22T10:15:00Z",
+      "deployed_by": "Équipe Produit (pipeline CI)",
+      "description": "Livraison 2.4.7 de l'Orders API (contenu détaillé du diff à joindre à l'enquête)"
+    },
+    "correlation": {
+      "délai_minutes": 2.0,
+      "lecture": "Première erreur 2.0 min après le déploiement 2.4.7. Proximité temporelle = indice, PAS une preuve de causalité : d'autres changements ou une cause externe (base de données, réseau) restent possibles."
+    }
+  },
+  "detection": {
+    "anomalie": true,
+    "severite": "critique",
+    "fenetre": "1m",
+    "errors_now": 50.18638058005273,
+    "requests_now": 50.18638058005273,
+    "error_rate_pct": 100.0,
+    "baseline": {
+      "points": 15,
+      "moyenne": 49.18,
+      "ecart_type": 52.06
+    },
+    "z_score": 0.02,
+    "regles": {
+      "seuil_absolu": true,
+      "taux_erreur": true,
+      "z_score": false
+    },
+    "raisons": [
+      "Seuil absolu : 50.1864 HTTP 500 sur 1m (≥ 3).",
+      "Taux d'erreur : 100% (≥ 5%).",
+      "Écart à la baseline : z = 0.0 (moyenne 49.2, écart-type 52.1, < 3.0)."
+    ],
+    "verdict": "ANOMALIE : seuil dépassé et confirmé par le taux d'erreur ou l'écart à la baseline."
+  },
+  "hypothesis": "La base de données (ou le pool de connexions) ne répond pas dans les délais.",
+  "analyse_ia": {
+    "symptomes": [
+      "50.18638058005273 HTTP 500 sur /orders sur 1 min",
+      "taux d'erreur 100.0 %"
+    ],
+    "hypotheses": [
+      {
+        "hypothese": "La base de données (ou le pool de connexions) ne répond pas dans les délais.",
+        "confiance": "moyenne",
+        "preuves": [
+          "logs : db_connection_timeout sur /orders"
+        ],
+        "preuves_manquantes": [
+          "métriques côté base (connexions, latence, CPU)",
+          "état du pool de connexions"
+        ],
+        "statut": "hypothèse non validée"
+      },
+      {
+        "hypothese": "La version 2.4.7 a introduit une régression (configuration ou code d'accès à la base).",
+        "confiance": "faible",
+        "preuves": [
+          "corrélation temporelle : 2.0 min après le déploiement"
+        ],
+        "preuves_manquantes": [
+          "diff 2.4.6 → 2.4.7",
+          "reproduction sur 2.4.6",
+          "erreurs absentes avant 10:15"
+        ],
+        "statut": "hypothèse non validée"
+      }
+    ],
+    "preuves": [
+      "Seuil absolu : 50.1864 HTTP 500 sur 1m (≥ 3).",
+      "Taux d'erreur : 100% (≥ 5%).",
+      "Écart à la baseline : z = 0.0 (moyenne 49.2, écart-type 52.1, < 3.0)."
+    ],
+    "controles_non_destructifs": [
+      "Consulter /health et la cible Prometheus (up)",
+      "Lire les métriques de connexions de la base (lecture seule)",
+      "Comparer la configuration 2.4.6 et 2.4.7 (diff, sans modification)",
+      "Vérifier si d'autres services utilisant la même base sont dégradés"
+    ],
+    "limites": [
+      "Analyse simulée (Ollama indisponible) : règles déterministes, pas de raisonnement LLM",
+      "Aucune métrique côté base de données collectée",
+      "Environnement de laboratoire : panne injectée par SIMULATE_FAILURE"
+    ],
+    "remediation_proposee": [
+      {
+        "action": "Rollback vers la version 2.4.6",
+        "risque": "moyen : perte des correctifs de 2.4.7",
+        "approbation_humaine_requise": true,
+        "statut": "approuvé (à exécuter manuellement)"
+      },
+      {
+        "action": "Redémarrage du service api",
+        "risque": "faible à moyen : interruption brève, peut masquer la cause",
+        "approbation_humaine_requise": true,
+        "statut": "en attente d'approbation"
+      }
+    ]
+  },
+  "checks_read_only": [
+    "Consulter /health et la cible Prometheus (up)",
+    "Lire les métriques de connexions de la base (lecture seule)",
+    "Comparer la configuration 2.4.6 et 2.4.7 (diff, sans modification)",
+    "Vérifier si d'autres services utilisant la même base sont dégradés"
+  ],
+  "confidence": "unverified",
+  "human_approval_required": true,
+  "approbations": [
+    {
+      "date": "2026-10-22T21:05:53+00:00",
+      "action_index": 1,
+      "action": "Rollback vers la version 2.4.6",
+      "decision": "approuvé",
+      "par": "Valentin",
+      "commentaire": "rollback validé après vérification du diff"
+    }
+  ],
+  "analyse_ia_mode": "simulé",
+  "analyse_ia_note": "mode simulé demandé (--simulate-llm)"
+}

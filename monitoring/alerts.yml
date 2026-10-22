@@ -1,0 +1,19 @@
+groups:
+  - name: techcorp-alerts
+    rules:
+      # Seuil fixe fourni par le sujet (B4) : simple, mais aveugle au volume de trafic.
+      - alert: ElevatedHTTP500
+        expr: sum(increase(techcorp_http_requests_total{status="500"}[1m])) >= 3
+        for: 15s
+        labels:
+          severity: warning
+        annotations:
+          summary: "Multiple HTTP 500 responses during the last minute"
+      # Complément : la cible ne répond plus du tout.
+      - alert: TechcorpTargetDown
+        expr: up{job="techcorp-api"} == 0
+        for: 30s
+        labels:
+          severity: critical
+        annotations:
+          summary: "La cible techcorp-api n'est plus collectée par Prometheus"

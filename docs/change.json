@@ -1,0 +1,8 @@
+{
+  "change_id": "CHG-2026-0247",
+  "version": "2.4.7",
+  "previous_version": "2.4.6",
+  "deployed_at": "2026-10-22T10:15:00Z",
+  "deployed_by": "Équipe Produit (pipeline CI)",
+  "description": "Livraison 2.4.7 de l'Orders API (contenu détaillé du diff à joindre à l'enquête)"
+}

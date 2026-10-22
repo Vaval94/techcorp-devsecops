@@ -1,0 +1,29 @@
+services:
+  api:
+    build: .
+    ports: ["127.0.0.1:8000:8000"]
+    environment:
+      # Panne de laboratoire : $env:SIMULATE_FAILURE="true" puis recréer le service api
+      SIMULATE_FAILURE: "${SIMULATE_FAILURE:-false}"
+      APP_VERSION: "${APP_VERSION:-2.4.7}"
+    security_opt: ["no-new-privileges:true"]
+    read_only: true
+    tmpfs: [/tmp]
+  prometheus:
+    image: prom/prometheus:v3.2.1
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./monitoring/alerts.yml:/etc/prometheus/alerts.yml:ro
+    ports: ["127.0.0.1:9090:9090"]
+    command: ["--config.file=/etc/prometheus/prometheus.yml"]
+    depends_on: [api]
+  grafana:
+    image: grafana/grafana:11.5.2
+    ports: ["127.0.0.1:3000:3000"]
+    environment:
+      GF_AUTH_ANONYMOUS_ENABLED: "true"
+      GF_AUTH_ANONYMOUS_ORG_ROLE: "Viewer"
+    volumes:
+      - ./monitoring/grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./monitoring/grafana/dashboards:/var/lib/grafana/dashboards:ro
+    depends_on: [prometheus]

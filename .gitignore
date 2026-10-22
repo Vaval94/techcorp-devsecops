@@ -1,0 +1,7 @@
+__pycache__/
+.pytest_cache/
+.env
+*.key
+*.pem
+gitleaks-report.json
+trivy-*.txt

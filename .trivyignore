@@ -1,0 +1,7 @@
+# Exceptions APPROUVÉES uniquement (voir docs/quality-gate.md, § Exceptions).
+# Une ligne = un identifiant CVE, précédé d'un commentaire obligatoire :
+#   justification, propriétaire, date d'approbation, date d'expiration.
+#
+# Exemple (inactif) :
+# Faux positif : fonction vulnérable non utilisée par l'API — RSSI, 2026-10-22, expire 2026-11-22
+# CVE-0000-00000
